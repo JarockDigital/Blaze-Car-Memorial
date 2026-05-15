@@ -12,7 +12,7 @@ AOS.init({
 const intro = document.getElementById("intro-screen");
 const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("music-btn");
-
+document.body.classList.add("locked"); // LOCK SCROLL UNTIL INTRO IS DISMISSED
 // =========================
 // SAFETY: FORCE PAGE TO TOP ON LOAD
 // (THIS FIXES YOUR MAIN ISSUE)
@@ -32,25 +32,22 @@ music.volume = 0.25;
 // INTRO CLICK START
 // =========================
 intro.addEventListener("click", () => {
+ 
+    document.body.classList.remove("locked"); // UNLOCK SCROLL 
+    window.scrollTo(0, 0); // ENSURE SCROLL IS AT TOP
 
-  // FORCE SCROLL RESET (IMPORTANT FIX)
-  window.scrollTo(0, 0);
+    intro.style.opacity = "0";
+    setTimeout(() => {
+      intro.style.display = "none";
 
-  intro.style.opacity = "0";
-
-  setTimeout(() => {
-    intro.style.display = "none";
-
-    // SECOND SCROLL RESET AFTER LAYOUT STABILIZES
-    window.scrollTo(0, 0);
-
-  }, 1000);
-
-  music.play().catch(() => {
-    console.log("Autoplay blocked");
-  });
-
-});
+      window.scrollTo(0, 0); // FINAL CHECK TO ENSURE SCROLL IS AT TOP
+      }, 800);
+      if (music) {
+        music.play().catch(() => {
+          console.log("Autoplay blocked");
+        });
+      }
+    });
 
 // =========================
 // MUSIC BUTTON
