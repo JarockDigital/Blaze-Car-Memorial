@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blaze Memorial</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS ANIMATIONS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  />
+
+</head>
+
+<body>
+
+  <!-- INTRO SCREEN (NEW) -->
+  <div id="intro-screen">
+    <h1>Blaze</h1>
+    <p>In Memory of a Protector</p>
+    <span>Tap anywhere to enter</span>
+  </div>
+
+  <!-- SCROLL BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- MUSIC -->
+  <audio id="bg-music" loop>
+    <source src="audio/song.mp3" type="audio/mp3">
+  </audio>
+
+  <button id="music-btn">
+    <span class="music-icon">♫</span>
+  </button>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-overlay">
+
+      <h1 data-aos="fade-up">
+        Blaze
+      </h1>
+
+      <p class="subtitle" data-aos="fade-up" data-aos-delay="200">
+        2017 — 2026
+      </p>
+
+      <p class="vehicle" data-aos="fade-up" data-aos-delay="400">
+        Hyundai Santa Fe Sport • Canyon Copper
+      </p>
+
+      <p class="quote" data-aos="fade-up" data-aos-delay="600">
+        “Some vehicles are more than transportation.
+        Some become family.”
+      </p>
+
+      <a href="#story" class="scroll-btn">
+        ↓
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+
+    <div class="glass-card" data-aos="fade-up">
+
+      <h2>Blaze Was a Hero</h2>
+
+      <p>
+        Blaze was more than just a 2017 Hyundai Santa Fe Sport.
+        Blaze protected the person we love most during one
+        of the scariest moments imaginable.
+      </p>
+
+      <p>
+        After being hit by a black truck, Blaze rolled over twice
+        across the median and ended up upside down on the opposite
+        side of the road.
+      </p>
+
+      <p>
+        Even through the chaos and destruction,
+        Blaze protected her and helped save her life.
+      </p>
+
+      <p>
+        Some people only see metal and wheels.
+        We see memories, protection, loyalty, and love.
+      </p>
+
+      <p class="signature">
+        Forever remembered. Forever loved.
+        <br>
+        — Blaze
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- QUOTE SECTION -->
+  <section class="quote-section">
+
+    <div class="quote-overlay">
+
+      <h2 data-aos="zoom-in">
+        “Blaze gave everything to protect her.”
+      </h2>
+
+    </div>
+
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline">
+
+    <h2 data-aos="fade-up">
+      The Story of Blaze
+    </h2>
+
+    <div class="timeline-container">
+
+      <div class="timeline-item" data-aos="fade-right">
+        <h3>2017</h3>
+        <p>
+          Blaze begins its journey as a Canyon Copper Hyundai Santa Fe Sport.
+        </p>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <h3>Years of Memories</h3>
+        <p>
+          Countless drives, conversations, laughs, music, and moments that became memories.
+        </p>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <h3>The Crash</h3>
+        <p>
+          After being hit by a black truck, Blaze rolled over twice across the median and ended upside down protecting the life inside.
+        </p>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <h3>Forever Remembered</h3>
+        <p>
+          Some vehicles are never forgotten. Blaze will always be one of them.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+
+    <h2 data-aos="fade-up">
+      Memories of Blaze
+    </h2>
+
+    <div class="photo-grid">
+
+      <div class="photo-card" data-aos="zoom-in">
+        <img src="images/car1.jpg" alt="">
+      </div>
+
+      <div class="photo-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/car2.jpg" alt="">
+      </div>
+
+      <div class="photo-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/car3.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="videos">
+
+    <h2 data-aos="fade-up">
+      Remembering Blaze
+    </h2>
+
+    <div class="video-container">
+
+      <video controls data-aos="fade-up">
+        <source src="videos/video1.mp4" type="video/mp4">
+      </video>
+
+      <video controls data-aos="fade-up" data-aos-delay="200">
+        <source src="videos/video2.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+  </section>
+
+  <!-- ENDING -->
+  <section class="ending">
+
+    <h2 data-aos="fade-up">
+      Blaze
+    </h2>
+
+    <p data-aos="fade-up" data-aos-delay="200">
+      2017 — 2026
+    </p>
+
+    <p class="ending-text" data-aos="fade-up" data-aos-delay="400">
+      A Protector.
+      A Memory.
+      A Hero.
+    </p>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      Blaze • 2017 — 2026
+    </p>
+
+    <p class="footer-small">
+      Hyundai Santa Fe Sport • Canyon Copper
+    </p>
+
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+
+    <span id="close-lightbox">
+      ✕
+    </span>
+
+    <img id="lightbox-img">
+
+  </div>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
